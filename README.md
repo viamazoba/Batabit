@@ -11,5 +11,6 @@ This is a personal project that I have used to practice my skills in the field o
 - CSS custom properties
 - Flexbox
 - JavaScript
+- Mobile Firts
 
 ## Link: https://viamazoba.github.io/Batabit/
