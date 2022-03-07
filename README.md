@@ -12,4 +12,4 @@ This is a personal project that I have used to practice my skills in the field o
 - Flexbox
 - JavaScript
 
-## Link: 
+## Link: https://viamazoba.github.io/Batabit/
