@@ -1,0 +1,673 @@
+
+:root{
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+}
+
+*, html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    /*font-family: 'Inter', sans-serif;*/
+    width: 100%;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 32rem;
+    height: 31rem;
+    text-align: center;
+    background:linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+
+}
+
+header img{
+    width: 17rem;
+    height: 2.4rem;
+    align-self: center;
+    margin-top: 3rem;
+}
+
+
+.header--title--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 28.8rem;
+    max-width: 90rem;
+    height: 12rem;
+    margin-top: 4rem;
+    font-size: 1.3rem;
+    color: var(--off-white);
+    text-align: center;
+    align-self: center;
+    padding: 0 4.5rem;
+}
+h1{
+    line-height: 2.8rem;
+}
+
+.header--title--container p{
+    font-size: 1.3rem;
+    margin-top: 1.8rem;
+}
+
+
+
+.header--button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 29rem;
+    width: 28rem;
+    height: 4.5rem;
+    border: none;
+    background-color: var(--off-white);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    color: var(--black);
+    font-weight: 500;
+    box-shadow: 0px 1px 20px rgb(0 0 0 / 10%);
+}
+
+.header--button:hover{
+    box-shadow: 0px 1px 20px rgb(247, 147, 26, 0.60);
+} 
+
+.header--title--container .down-arrow{
+    align-self: center;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    /*margin: 0.8rem;*/
+    width: 1.3rem;
+    height: 2rem;
+}
+
+.contain-firstSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.firstSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--off-white);
+    height: 90rem;
+}
+
+.image-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 21rem;
+    padding: 3rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.firstSection figure{
+    position: absolute;
+}
+
+.firstSection_bitcoin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 95%;
+    height: 95%;
+    opacity: 85%;
+    transition: 0.2s;
+}
+
+.firstSection_bitcoin:hover{
+   opacity: 100%;
+   width: 115%;
+   height: 115%;
+}
+
+h2{
+    font-size: 2.4rem;
+    line-height: 2.7rem;
+}
+
+.firsSection_text_container{
+    display: flex;
+    flex-direction: column;
+    padding: 3.5rem;
+}
+
+
+.firsSection_text_container p{
+    font-size: 1.4rem;
+    color: #757575;
+    margin-top: 2rem;
+}
+
+/* Desde Aquí debes corregir la tabla*/
+
+.Treding-down{
+    display: inline-block;
+    background-image: url("./icons/trending-down.svg");
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+    background-size:cover ;
+    background-position: center
+}
+
+
+.Treding-up{
+    display: inline-block;
+    background-image: url("./icons/trending-up.svg");
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+    background-size:cover ;
+    background-position: center
+}
+
+.firsSection_coins_container .firstSection_table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 20rem;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+.firsSection_coins_container h3{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+    text-align: start;
+    margin-top: 1.5rem;
+}
+
+.firstSection_table table{
+    width: 100%;
+    height: 100%;
+}
+
+.firstSection_table table td{
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+
+}
+
+.firstSection_table table td:hover{
+    color: var(--black);
+}
+
+
+.firstSection_table table .top_left{
+    border-radius: 1.5rem 0 0 0;
+}
+
+.firstSection_table table .top_right{
+    border-radius: 0 1.5rem 0 0;
+}
+
+
+.firstSection_table table .bottom-left{
+    border-radius: 0 0 0 1.5rem;
+}
+
+.firstSection_table table .bottom-right{
+    border-radius: 0 0 1.5rem 0;
+}
+
+.firstSection_table table .right{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+
+.firsSection_coins_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.table-date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--soft-orange); 
+    width: max-content;
+    padding: 1rem;
+    height: 3.1rem;
+    font-size: 1.2rem;
+    border-radius: 0.8rem ;
+    font-family: sans-serif;
+    margin-top: 1.5rem;
+    color: var(--warm-black);
+}
+
+.container-arrow{
+    position: absolute;
+    width: 1.8rem;
+    height: 1.8rem;
+    top: 57%;
+    left: 110%;
+}
+
+.right-arrow{
+    
+    display: inline-block;
+    background-image: url("./icons/right-arrow.svg");
+    background-position: center;
+    background-size: cover;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;  
+}
+
+.container-arrow-2{
+    position: absolute;
+    width: 1.8rem;
+    height: 1.8rem;
+    top: 57%;
+    right: 107%;
+}
+
+#arrow-left{
+    display: none;
+    background-image: url("./icons/Vector.svg");
+    background-position: center;
+    background-size: cover;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;  
+}
+
+.secondSection{
+    position: relative;
+    background-color: #201E1C;
+}
+
+.batata{
+    display: inline-block;
+    position: absolute;
+    width: 4.2rem;
+    height: 2.5rem;
+    background-image: url(./icons/batata.svg);
+    background-repeat: no-repeat;
+    top: -1.4rem;
+    left: calc(50% - 2rem);
+}
+
+.secondSection-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3.5rem;
+
+}
+
+.secondSection-text h2{
+    font-size: 2.4rem;
+    color: var(--just-white);
+    margin-top: 5rem;
+}
+
+.secondSection-text p{
+    font-size: 1.4rem;
+    color: #808080;
+    margin-top: 2rem;
+}
+
+.subSecond-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3.5rem;
+}
+
+.subContainers{
+    width: 28.8rem;
+    height: 16.5rem;
+    background-color: #282623;
+    padding: 1.6rem;
+    border-radius: 0.7rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 1px 1px 20px rgb(40, 38, 35,0.3);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.subContainers:hover,
+.subContainers:not(:last-child):focus-within {
+  transform: translateY(-1.2rem);
+  
+}
+
+
+.subContainers h3{
+    font-size: 1.8rem;
+    color: var(--just-white);
+    margin: 1rem 0;
+}
+
+.subContainers p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+    margin-bottom: 2.2rem;
+}
+
+.subContainers img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.thirdSection{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.thirdSection div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    width: 100%;
+}
+
+.bitcoin-logo{
+    width: 100%;
+    background-color: var(--just-white) ;
+    margin-top: 3rem;
+}
+
+
+.overlap{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin: 0%;
+    cursor: pointer;
+}
+
+.thirdSection h2{
+    position: relative;
+    bottom: 40rem;
+    font-size: 2.8rem;
+    color: var(--just-white);
+}
+
+
+
+.bitcoin-person{
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease-out;
+}
+
+.bitcoin-person:hover{
+    opacity: 1;
+}
+
+.lastSection{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--just-white);
+    /*margin-top: 2rem;*/
+    padding: 3rem;
+}
+
+.lastSection p:nth-child(2){
+    font-size: 1.4rem;
+    color: #757575;
+    margin-top: 2rem;
+}
+
+.lastSection .containerCards{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 35rem;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.lastSection-card{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 25rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    background-color: var(--just-white);
+    margin-top: 5.5rem;
+    box-shadow: 0px 2px 30px rgb(0,0,0,0.2);
+    max-width: 260px;
+    position: absolute;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation: carousel-animate-vertical 15s linear infinite;
+}
+
+.lastSection-card a:nth-child(1){
+    position: absolute;
+    font-size: 1.2rem;
+    background-color: var(--bitcoin-orange);
+    padding: 0.5rem 1rem;
+    border-radius: 0.6rem;
+    text-decoration: none;
+    color: var(--just-white);
+    bottom: 23.7rem;
+}
+
+.lastSection .lastSection-card p:nth-child(2){
+    font-size: 1.4rem;
+    color: var(--black);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 20rem;
+    padding: 0 2.5rem;
+}
+
+.lastSection .lastSection-card .price .coin{
+    font-size: 5rem;
+    margin-top: 0rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.dollar{
+    position: absolute;
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 4.9rem;
+    bottom: 13rem;
+}
+
+.comment{
+    font-size: 1.2rem;
+    color: #757575;
+}
+
+.price a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    text-decoration: none;
+    background-color: var(--off-white);
+    border: 0.2rem solid var(--bitcoin-orange);
+    padding: 1rem 1rem;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    width: 16.5rem;
+    color: var(--warm-black);
+}
+
+.orange-arrow{
+    
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(./icons/orange-right-arrow.svg);
+    margin-left: 1.5rem;
+
+}
+
+#firstCard{
+    animation-delay: calc(5s * -1);
+}
+
+#secondCard{
+    background-color: var(--grey);
+    color: var(--black);
+    animation-delay: calc(5s * 0);
+}
+
+#secondCard a:nth-child(1){
+    background-color:#ddad65;
+    color: var(--just-white);
+}
+
+#secondCard .dollar{
+    left: 3.8rem;
+}
+
+#thirdCard{
+    background-color: #f9c74f;
+    color: var(--black);
+    animation-delay: calc(-5s * 2);
+}
+
+#thirdCard a:nth-child(1){
+    background-color:var(--warm-black);
+    color: var(--just-white);
+}
+
+.lastSection #thirdCard p:nth-child(2),#thirdCard p:nth-child(1){
+
+    color: var(--just-white);
+}
+
+
+footer{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--bitcoin-orange);
+    font-size: 1.45rem;
+    height: 16rem;
+    padding: 0 10rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+}
+
+footer ul{
+    list-style: none;
+    color: var(--just-white);
+    margin-right: 6rem;
+}
+
+footer ul li{
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+footer section:nth-child(2){
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+@keyframes carousel-animate-vertical {
+    0% {
+      transform: translateX(70%) scale(0.5);
+      opacity: 0;
+      visibility: hidden;
+    }
+    3%, 33.3333333333% {
+      transform: translateX(70%) scale(0.7);
+      opacity: 0;
+      visibility: visible;
+    }
+    36.3333333333%, 66.6666666667% {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+      visibility: visible;
+    }
+    69.6666666667%, 100% {
+      transform: translateX(-70%) scale(0.7);
+      opacity: 0;
+      visibility: visible;
+    }
+    103% {
+      transform: translateX(-70%) scale(0.5);
+      opacity: 0;
+      visibility: visible;
+    }
+
+}

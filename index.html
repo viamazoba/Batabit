@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./mobile.css" media="screen and (min-width:320px)">
+    <link rel="stylesheet" href="./tablet.css" media="screen and (min-width:1024px)">
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width:1280px)">
+
+    <link rel="Icon" href="https://img.icons8.com/color/48/000000/bitcoin--v1.png">
+    
+    <title>Bata bit</title>
+</head>
+<body>
+    <script src="./mobile.js"></script>
+    <header>
+        <figure>
+            <img src="./img/logo.svg" alt="logo-header">
+        </figure>
+        <div class="header--title--container">
+            <h1>La próxima revolución en el 
+                intercambio de criptomonedas.
+            </h1>
+            <p>
+                Batatabit te ayuda a navegar entre los 
+                diferentes precios y tendencias.
+            </p>
+            <a href="#lastSection" class="header--button">Conoce Nuestros Planes <img src="./icons/down-arrow.svg" class="down-arrow" alt="down arrow"></img></a>
+        </div>
+    </header>
+
+    
+
+    <main>
+        <section class="firstSection">
+            <article class="image-container">
+                <figure>
+                    <a href=""><img loading="lazy" src="./img/Bitcoin.svg" alt="Bitcoin" class="firstSection_bitcoin"></a>
+                </figure>
+            </article>
+
+            <section class="contain-firstSection">
+
+                <article class="firsSection_text_container">
+                    <h2>Visibilizamos todas las tasas de cambio.</h2>
+    
+                    <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
+                </article>
+    
+                <section class="firsSection_coins_container">
+                    <h3 id="Monedas">Monedas</h3>
+                    <article class="firstSection_table"            id="firstSection_table">
+                        <table>
+                            <tr>
+                                <td class="top_left"><p class="left" id="Bitcoin">Bitcoin</p></td>
+                                <td class="top_right"><p class="right" id="Value-1">$ 1.96</p><span class="Treding-down" id="Treding-1"></span></td>
+                            </tr>
+    
+                            <tr>
+                                <td><p class="left" id="Ethereum">Ethereum</p></td>
+                                <td><p class="right" id="Value-2">$ 0.07</p><span class="Treding-up" id="Treding-2"></span></td>
+                            </tr>
+    
+                            <tr>
+                                <td><p class="left" id="Ripple">Ripple</p></td>
+                                <td><p class="right" id="Value-3">$ 2.15</p><span class="Treding-down" id="Treding-3"></span></td>
+                            </tr>
+    
+                            <tr>
+                                <td class="bottom-left" id="Stellar"><p class="left">Stellar</p></td>
+                                <td class="bottom-right"><p class="right" id="Value-4">$ 4.96</p><span class="Treding-down" id="Treding-4"></span></td>
+                            </tr>
+                        </table>
+                        
+                        
+                        
+                    </article>
+                    <figure class="container-arrow">
+                        <a href="javascript:chance_table()" onclick="chance_table()" id="arrow"><span class="right-arrow"></span></a>
+                    </figure>
+    
+                    <figure class="container-arrow-2">
+    
+                        <a href="javascript:chance_table_one()" onclick="chance_table_one()" id="arrow-left"><span class="left-arrow"></span></a>
+    
+                    </figure>
+                </section>
+    
+                <div class="table-date" id="table-date">
+                    <p id="actualizar"><b>Actualizado:</b>19 Julio 23:45</p>
+                </div>
+
+            </section>
+        </section>
+
+
+        <section class="secondSection">
+            <span class="batata"></span>
+            <article class="secondSection-text">
+                <h2>Creamos un producto sin comparación.</h2>
+                <p>Confiable y diseñado para su uso diario.</p>
+            </article>
+
+            <section class="subSecond-section"> 
+                <article class="subContainers">
+                    <figure>
+                        <img src="./icons/clock.svg" alt="clock">
+                    </figure>
+
+                    <h3>Tiempo real</h3>
+                    <p>Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+                </article>
+
+                <article class="subContainers">
+                    <figure>
+                        <img src="./icons/eye.svg" alt="eye">
+                    </figure>
+
+                    <h3>No hay tasas escondidas</h3>
+                    <p>Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
+                </article>
+
+                <article class="subContainers"> 
+                    <figure>
+                        <img src="./icons/dollar-sign.svg" alt="dollar">
+                    </figure>
+
+                    <h3>Compara monedas</h3>
+                    <p>No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
+                </article>
+
+                <article class="subContainers">
+                    <figure>
+                        <img src="./icons/check-circle.svg" alt="check circle">
+                    </figure>
+
+                    <h3>Información confiable</h3>
+                    <p>Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+                </article>
+
+            </section>
+        </section>
+
+        <section class="thirdSection">
+            <div>
+                
+
+                <figure >
+                    <img src="./img/Bitcoin-Logo.png" alt="Bitcoin logo" class="bitcoin-logo">
+                </figure>
+
+                <figure class="overlap">
+                    <img src="./img/bitcoinbaby2x.png" alt="person with bitcoins" class="bitcoin-person">
+                    <h2>Conócelo hoy.</h2>
+                </figure>
+
+            </div>
+        </section>
+
+        <section class="lastSection" id="lastSection">
+            <h2>
+                Escoge el plan que mejor se ajuste a ti.
+            </h2>
+            <p>
+                Cualquier plan te da acceso completo a nuestra plataforma. 
+            </p>
+
+            <section class="containerCards">
+                
+                <article class="lastSection-card" id="firstCard">
+                    <a href="#">Recomendado</a>
+                    <p>Pago Anual</p>
+                    <div class="price">
+                        <p class="dollar">$</p>
+                        <p class="coin">99</p>
+                        <p class="comment">*Ahorras $129 comparado al plan mensual.</p>
+                        <a href="#">Escoger estes <span class="orange-arrow"></span></a>
+                    </div>
+                </article>
+
+                <article class="lastSection-card" id="secondCard">
+                    <a href="#">Plan Básico*</a>
+                    <p>Pago mensual</p>
+                    <div class="price">
+                        <p class="dollar">$</p>
+                        <p class="coin">229</p>
+                        <p class="comment">*Ahorras $12 si deseas pasarte al plan mensual.</p>
+                        <a href="#">Escoger estes <span class="orange-arrow"></span></a>
+                    </div>
+                </article>
+
+                <article class="lastSection-card" id="thirdCard">
+                    <a href="#">Plan Premium</a>
+                    <p>Pago de por vida</p>
+                    <div class="price">
+                        <p class="dollar">$</p>
+                        <p class="coin">25</p>
+                        <p class="comment">*Pagas de manera anual el plan completo.</p>
+                        <a href="#">Escoger estes <span class="orange-arrow"></span></a>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        <section>
+            <ul class="footer-list-left">
+                <li>Linkedin</li>
+                <li>Crunchbase</li>
+                <li>Hackernews</li>
+            </ul>
+        </section>
+
+        <section>
+            <img src="./img/logo-footer.svg" alt="logo_footer">
+        </section>
+    </footer>
+</body>
+</html>
